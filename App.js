@@ -17,7 +17,7 @@ export default class App extends Component<Props> {
     };
     colors = ['rgb(0,0,0)', 'rgb(0,0,255)', 'rgb(0,255,255)', 'rgb(0,128,0)', 'rgb(255,0,255)', 'rgb(255,0,0)', 'rgb(255,255,0)'];
 
-    componentWillMount() {
+    componentDidMount() {
         const [boxItems, animatedValue, nextItems, currentItems] = [[], {}, {}, {}];
         let index = 0;
         this.colors.forEach((outer, rowIndex) => {
